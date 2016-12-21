@@ -1,8 +1,16 @@
-function resetCounter(){
-	document.getElementById("clickCount").innerHTML = 0;
-};
+var resetCounter = (function() {
 
-setInterval(function(){
-	resetCounter()
-}, 30000);
+	var count = document.getElementById("clickCount");
+
+	function resetCounter() {
+		count.innerHTML = 0;
+	};
+
+	setInterval(function() {
+		resetCounter();
+	}, 30000);
+})();
+
+
+
 

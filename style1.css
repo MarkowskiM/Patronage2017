@@ -12,11 +12,16 @@ div#myBox {
 	line-height: 100px;
 }
 
+div#myBox:hover {
+	cursor: pointer;
+}
+
 span#clickCount {
-	width: 50px;
-	margin-left: 50%;
+	position: relative;
+	left: 50%;
 }
 
 span#clickCount:hover {
 	color: red;
+	cursor: default;
 }

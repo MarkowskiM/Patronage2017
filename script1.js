@@ -1,6 +1,12 @@
-var count = document.getElementById("clickCount");
-var box = document.getElementById("myBox");
+var counter = (function() {
 
-box.addEventListener("click", function(){
-    count.innerHTML = parseInt(count.innerHTML) + 1;
-});
+    var box = document.getElementById("myBox"),
+        count = document.getElementById("clickCount");
+
+    function incrementCounter() {
+        count.innerHTML = parseInt(count.innerHTML) + 1;
+    }
+
+    box.addEventListener("click", incrementCounter);
+})();
+
