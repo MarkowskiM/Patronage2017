@@ -2,6 +2,7 @@
 > Patronage Intive 2017
 
 Zadanie 1 z grupy Front-end.
+Michał Markowski
 
 ## Lista źródeł:
 
